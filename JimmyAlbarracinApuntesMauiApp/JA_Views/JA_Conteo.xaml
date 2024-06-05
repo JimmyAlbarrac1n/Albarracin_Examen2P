@@ -4,22 +4,43 @@
              x:Class="JimmyAlbarracinApuntesMauiApp.JA_Views.JA_Conteo"
              Title="JA_Conteo">
 
-    <StackLayout Padding="20">
+    <AbsoluteLayout Padding="20">
         <Label Text="Ingrese una cadena de caracteres alfanuméricos:"
-               FontSize="Medium"/>
-        <Entry x:Name="InputEntry" Placeholder="Ingrese el texto aquí"/>
+               FontSize="Medium"
+               AbsoluteLayout.LayoutBounds="0.1, 0.1, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+        <Entry x:Name="InputEntry" Placeholder="Ingrese el texto aquí"
+               AbsoluteLayout.LayoutBounds="0.5, 0.2, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
 
         <Button Text="Calcular"
-                Clicked="OnCalculateButtonClicked"/>
+                Clicked="OnCalculateButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5, 0.3, 0.4, AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
 
         <Button Text="Limpiar"
-                Clicked="OnClearButtonClicked"/>
+                Clicked="OnClearButtonClicked"
+                AbsoluteLayout.LayoutBounds="0.5, 0.4, 0.4, AutoSize"
+                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
 
-        <Label x:Name="TotalLabel" FontSize="Small"/>
-        <Label x:Name="NumbersLabel" FontSize="Small"/>
-        <Label x:Name="LettersLabel" FontSize="Small"/>
-        <Label x:Name="VowelsLabel" FontSize="Small"/>
-        <Label x:Name="UppercaseLabel" FontSize="Small"/>
-        <Label x:Name="LowercaseLabel" FontSize="Small"/>
-    </StackLayout>
+        <Label x:Name="TotalLabel" FontSize="Small"
+               AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+        <Label x:Name="NumbersLabel" FontSize="Small"
+               AbsoluteLayout.LayoutBounds="0.5, 0.6, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+        <Label x:Name="LettersLabel" FontSize="Small"
+               AbsoluteLayout.LayoutBounds="0.5, 0.7, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+        <Label x:Name="VowelsLabel" FontSize="Small"
+               AbsoluteLayout.LayoutBounds="0.5, 0.8, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+        <Label x:Name="UppercaseLabel" FontSize="Small"
+               AbsoluteLayout.LayoutBounds="0.5, 0.9, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+        <Label x:Name="LowercaseLabel" FontSize="Small"
+               AbsoluteLayout.LayoutBounds="0.5, 1.0, 0.8, AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+    </AbsoluteLayout>
 </ContentPage>
