@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new JA_Views.JA_Conteo();
         }
     }
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JimmyAlbarracinApuntesMauiApp.JA_Views.JA_Conteo"
+             Title="JA_Conteo">
+
+    <StackLayout Padding="20">
+        <Label Text="Ingrese una cadena de caracteres alfanuméricos:"
+               FontSize="Medium"/>
+        <Entry x:Name="InputEntry" Placeholder="Ingrese el texto aquí"/>
+
+        <Button Text="Calcular"
+                Clicked="OnCalculateButtonClicked"/>
+
+        <Button Text="Limpiar"
+                Clicked="OnClearButtonClicked"/>
+
+        <Label x:Name="TotalLabel" FontSize="Small"/>
+        <Label x:Name="NumbersLabel" FontSize="Small"/>
+        <Label x:Name="LettersLabel" FontSize="Small"/>
+        <Label x:Name="VowelsLabel" FontSize="Small"/>
+        <Label x:Name="UppercaseLabel" FontSize="Small"/>
+        <Label x:Name="LowercaseLabel" FontSize="Small"/>
+    </StackLayout>
+</ContentPage>
